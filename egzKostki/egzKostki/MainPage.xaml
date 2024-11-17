@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="egzKostki.MainPage">
+
+    <StackLayout BackgroundColor="Beige">
+        <Label Text="Gra w kości. Autor 0000000000" BackgroundColor="Brown" TextColor="White" FontSize="32"/>
+
+        <Button Text="RZUĆ KOŚCMI" Clicked="RollDices" BackgroundColor="Chocolate" Margin="10" HorizontalOptions="Center"/>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="5">
+            <Label x:Name="dice1" Text="?" Margin="5"/>
+            <Label x:Name="dice2" Text="?" Margin="5"/>
+            <Label x:Name="dice3" Text="?" Margin="5"/>
+            <Label x:Name="dice4" Text="?" Margin="5"/>
+            <Label x:Name="dice5" Text="?" Margin="5"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="10">
+            <Label Text="Wynik tego losowania: " />
+            <Label Text="" x:Name="rollResult"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="10">
+            <Label Text="Wynik gry: " />
+            <Label Text="" x:Name="gameResult"/>
+        </StackLayout>
+
+        <Button Text="RESETUJ WYNIK" Clicked="Reset" BackgroundColor="Chocolate" Margin="10" HorizontalOptions="Center"/>
+    </StackLayout>
+    
+</ContentPage>
